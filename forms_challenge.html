@@ -7,24 +7,33 @@
 </head>
 <body>
     <main>
+
         <form>
-            <p><input type="text" placeholder=" Full Name"></p>
-            <p><input type="text" placeholder="email"></p>
             <p>
-                <div>
-                    <select name="pointlesslygendered">
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Prefer not to say">Prefer not to say</option>
-                        <option value="Non-binary">Non Binary</option>
-                    </select>
-                </div>
-                <div>
-                    <textarea rows=4 cols=20>
-                        Type your text here
-                    </textarea>
-                </div>           
+                <label for="fullname">Full Name: </label> 
+                <input id="fullname" type="text" placeholder=" Full Name">  
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input id="email" type="text" placeholder="Email">
+            </p>
+            <p>
+                <label for="gender">Gender: </label>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Non-binary">Non Binary</option>
+                </select>
+            </p>
+            <p>
+                <label for="message">Message: </label>
+                <textarea id="message" rows=2 cols=20>
+Type your text here
+                </textarea>
+            </p>           
         </form>
+
     </main>
 </body>
 </html>
