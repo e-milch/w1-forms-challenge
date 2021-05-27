@@ -9,29 +9,31 @@
     <main>
 
         <form>
-            <p>
+            <div>
                 <label for="fullname">Full Name: </label> 
-                <input id="fullname" type="text" placeholder=" Full Name">  
-            </p>
-            <p>
+                <input id="fullname" type="text" placeholder="Full Name">  
+            </div>
+            <div>
                 <label for="email">Email: </label>
-                <input id="email" type="text" placeholder="Email">
-            </p>
-            <p>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div>
                 <label for="gender">Gender: </label>
-                <select id="gender">
+                <select id="gender" required>
+                    <option value="">Select</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="Prefer not to say">Prefer not to say</option>
                     <option value="Non-binary">Non Binary</option>
                 </select>
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="message">Message: </label>
-                <textarea id="message" rows=2 cols=20>
-Type your text here
-                </textarea>
-            </p>           
+                <textarea id="message" rows="2" cols="20">Type here</textarea>
+            </div>  
+            <div>
+                <button>Submit</button>
+            </div>         
         </form>
 
     </main>
